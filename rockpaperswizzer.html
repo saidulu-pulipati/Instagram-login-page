@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>roclk paper swizzer</h1>
+    <input type="number" placeholder="enter a number from 0,2,5," id="input">
+    <button id="button" onclick="submit()">ok</button>
+    <h2> <span id="result">0</span></h2>
+    <h2> <span id="resulttwo">0</span></h2>
+
+ 
+
+    <script>
+
+       function submit(){
+         
+         
+         var userinput = document.getElementById('input').value;
+         document.getElementById('result').innerHTML= userinput;
+    
+        if (userinput==2){
+            document.getElementById('result').innerHTML= userinput + "swizzer"
+         }
+         else if(userinput==0){
+       document.getElementById('result').innerHTML= userinput + "rock"
+         }
+         else if(userinput==5){
+       document.getElementById('result').innerHTML= userinput + "paper"
+         }else{
+            document.getElementById('result').innerHTML="enter correct number"
+         }
+            let arr= [2,0,5]
+            let numbers = arr[Math.floor(Math.random()*arr.length)];
+            document.getElementById('resulttwo').innerHTML=numbers;
+         
+         
+        }
+       
+        
+    
+
+    </script>
+</body>
+</html>

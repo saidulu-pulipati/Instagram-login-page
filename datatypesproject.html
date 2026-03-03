@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div style="display: flex;">
+       <div id="#showcart" style="display: flex;" >
+         <div id="container"></div>
+       </div>
+    <div id="card1" style="width: 200px; height: 400px; background-color: rgb(241, 3, 3); margin: 10px;">
+<h1>cart1</h1>
+<span id="value">0</span>
+<button id="cartbtn1" onclick="mycard()">add to cart</button>
+    </div>
+    </div>
+    <script>
+        let count=0
+        function mycard(){
+              count++
+            let newdiv=document.createElement("div")
+            newdiv.innertext="cardadded"
+            newdiv.style.backgroundColor="black"
+            newdiv.style.width="300px"
+            newdiv.style.height="20px"
+            newdiv.style.margin="20px"
+            newdiv.style.display="flex"
+            newdiv.style.flexDirection="row"
+            newdiv.style.borderRadius="30px"
+            document.getElementById("container").appendChild(newdiv)
+            document.getElementById("value").textContent=count
+
+        }
+    </script>
+    
+</body>
+</html>

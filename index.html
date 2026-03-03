@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <!--<script src="index.js"></script>-->
+
+  
+    
+</head>
+<body>
+<input type="text" placeholder="enter name" id="input">
+<input type="submit" id="submit" onclick="showvalue()">
+<p id="update">0</p>
+<h1></h1>
+</div >
+     <div style="display: flex; text-align: center; justify-content: center;">
+       <script>
+      
+
+        let inputnumber =document.getElementById("input")
+        let submit = document.getElementById("submit")
+
+         function showvalue(){
+          document.getElementById("update").textContent=inputnumber.value
+
+          let score = inputnumber.value
+          
+         }
+
+        let ramu = score
+        document.write(ramu)
+         ramu = 40
+        document.write(ramu)
+        // memory
+
+        let a ;
+        document.write()
+
+        //object and object oriented programing
+
+        //class 
+        //object
+
+        //object is a thing that has state and behaviour
+
+        //state--->properties  ex house widhth and hegith because doesnt change
+        //behaviour--->actions  ex house color because it changes
+
+        class book {
+          constructor(tilte,price,no_pages,autor){
+            this.title = tilte
+            this.price = price
+            this.no_pages = no_pages
+            this.autor = autor
+          }
+        }
+
+       
+        let book1= new book("saidulu",400,200,"pulipati")
+       document.write(book1.autor)
+       console.log(book1)
+
+       let book2= new book("sai",400,200,"pulati")
+       document.write(book2.autor)
+       console.log(book1)
+      </script>
+     </div>
+</body>
+</html>
